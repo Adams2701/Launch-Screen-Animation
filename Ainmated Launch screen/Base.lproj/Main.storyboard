@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchScreenViewController" customModule="Ainmated_Launch_screen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fech_logo" translatesAutoresizingMaskIntoConstraints="NO" id="MC5-QO-QXq">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="D9o-r8-Yqv"/>
+                                    <constraint firstAttribute="width" constant="200" id="kqh-zE-Ruw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MC5-QO-QXq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OQj-By-HYP"/>
+                            <constraint firstItem="MC5-QO-QXq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wy4-ak-XtA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Hd-dr-i0r"/>
+                    <connections>
+                        <segue destination="Jpp-52-qlJ" kind="presentation" identifier="goToSecreen" modalPresentationStyle="fullScreen" id="rdd-D9-Jjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="98.4375"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="nZW-qg-whr">
+            <objects>
+                <viewController id="Jpp-52-qlJ" customClass="SecondViewController" customModule="Ainmated_Launch_screen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VsQ-Fj-8Va">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MWZ-8B-6lV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o3I-e9-4BQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bzm-sU-5sc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2142" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fech_logo" width="500" height="500"/>
+    </resources>
+</document>
